@@ -8,4 +8,12 @@ class PigLatinizer
         word = word + "way"
       else 
         reordered = []
-        while !word.match
+        while !word.match(/^[aeiou]/i)
+        reordered << word[0]
+        word[0] = ""
+      end 
+      word + reordered.join("") + "ay"
+    end 
+  end 
+  translated.join(" ")
+end 
