@@ -17,3 +17,4 @@ class PigLatinizer
   end 
   translated.join(" ")
 end 
+end 
